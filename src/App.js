@@ -1,8 +1,11 @@
 import './App.css';
-import {Routes} from "react-router-dom"
+import {Routes, Route} from "react-router-dom"
 // import Error from './components/pages/Error';
 import { Layout,Typography} from 'antd'
 import SideBar from './partials/SideBar.tsx';
+import Stores from './pages/stores/Stores';
+import Customers from './pages/customers/Customers';
+import Users from './pages/users/Users';
 
 const {Title} = Typography
 const { Header, Content, Footer, } = Layout
@@ -16,12 +19,15 @@ function App() {
       <SideBar />
       <Layout className="site-layout" style={{paddingLeft: "40px"}}>
           <Header className="site-layout-background" style={{ padding: 0 }}>
-            <Title level={3} style={{marginTop: "20px", marginLeft: "20px", color: "#09ABC2"}}>App</Title>
+            <Title level={3} style={{marginTop: "20px", marginLeft: "20px", color: "#09ABC2"}}>General Stores App</Title>
           </Header>
           <Content >
               <Routes>
                   {/* <Route path='/dashboard' element={<Dashboard />} /> */}
                   {/* <Route path='*' element={<Error />} /> */}
+                  <Route path='/customers' element={<Customers />} />
+                  <Route path='/stores' element={<Stores />} />
+                  <Route path='/users' element={<Users />} />
 
               </Routes>
 
