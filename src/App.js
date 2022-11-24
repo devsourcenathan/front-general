@@ -6,6 +6,7 @@ import SideBar from './partials/SideBar.tsx';
 import Stores from './pages/stores/Stores';
 import Customers from './pages/customers/Customers';
 import Users from './pages/users/Users';
+import Products from './pages/products/Products';
 
 const {Title} = Typography
 const { Header, Content, Footer, } = Layout
@@ -28,6 +29,7 @@ function App() {
                   <Route path='/customers' element={<Customers />} />
                   <Route path='/stores' element={<Stores />} />
                   <Route path='/users' element={<Users />} />
+                  <Route path='/products' element={<Products />} />
 
               </Routes>
 

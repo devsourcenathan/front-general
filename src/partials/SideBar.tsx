@@ -42,6 +42,7 @@
         getItem("Boutiques", '/stores'),
       ]),
       getItem("Stock", "/stock",<BsCalendarCheck />, [
+        getItem("Produits", "/products"),
         getItem("Sorties", "/output"),
         getItem("Entrees", "/input"),
         getItem("Variations", "/variations"),
