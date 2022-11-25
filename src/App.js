@@ -7,6 +7,7 @@ import Stores from './pages/stores/Stores';
 import Customers from './pages/customers/Customers';
 import Users from './pages/users/Users';
 import Products from './pages/products/Products';
+import Providers from './pages/providers/Providers';
 
 const {Title} = Typography
 const { Header, Content, Footer, } = Layout
@@ -27,6 +28,7 @@ function App() {
                   {/* <Route path='/dashboard' element={<Dashboard />} /> */}
                   {/* <Route path='*' element={<Error />} /> */}
                   <Route path='/customers' element={<Customers />} />
+                  <Route path='/providers' element={<Providers />} />
                   <Route path='/stores' element={<Stores />} />
                   <Route path='/users' element={<Users />} />
                   <Route path='/products' element={<Products />} />

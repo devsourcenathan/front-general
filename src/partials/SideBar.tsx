@@ -1,7 +1,7 @@
 
   import { Avatar, MenuProps } from 'antd'
   import { Layout, Menu, Typography, Divider } from 'antd'
-  import React, { useEffect, useState } from 'react'
+  import React, { useState } from 'react'
   import { useNavigate, To } from 'react-router-dom';
   import {MdDashboard, MdPermContactCalendar, MdSettings} from 'react-icons/md'
   import {BsCalendarCheck,BsCashCoin} from 'react-icons/bs'
@@ -37,9 +37,10 @@
     const items: MenuItem[] = [
       getItem("Dashboard","/dashboard", <MdDashboard />),
       getItem("Repertoire", "/repository", <MdPermContactCalendar />, [
-        getItem("Utilisateurs", '/users'),
         getItem("Clients", '/customers'),
         getItem("Boutiques", '/stores'),
+        getItem("Fournisseurs", '/providers'),
+        getItem("Utilisateurs", '/users'),
       ]),
       getItem("Stock", "/stock",<BsCalendarCheck />, [
         getItem("Produits", "/products"),
@@ -76,9 +77,6 @@
     return (
       
       <Sider collapsible collapsed={collapsed} onCollapse={value => setCollapsed(value)}>
-            <div className="logo" style={{textAlign: "center"}}>
-              {/* <img src={logo} alt="logo" width={80}/> */}
-            </div>
               <Title level={5} style={{textAlign: "center", color: "#fff"}} id="title">General Stores</Title>
           
             <Menu mode="inline" items={items} onClick={({key}) => go(key)} openKeys={openKeys} onOpenChange={onOpenChange}/>
