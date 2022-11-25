@@ -8,6 +8,7 @@ import Customers from './pages/customers/Customers';
 import Users from './pages/users/Users';
 import Products from './pages/products/Products';
 import Providers from './pages/providers/Providers';
+import Variations from './pages/variations/Variations';
 
 const {Title} = Typography
 const { Header, Content, Footer, } = Layout
@@ -32,6 +33,7 @@ function App() {
                   <Route path='/stores' element={<Stores />} />
                   <Route path='/users' element={<Users />} />
                   <Route path='/products' element={<Products />} />
+                  <Route path='/variations' element={<Variations />} />
 
               </Routes>
 
