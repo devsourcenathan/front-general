@@ -1,13 +1,9 @@
 import React from 'react'
-// import { useContext } from 'react';
 import { Row, Col, Card} from 'antd'
-// import params from '../../../../../config/params';
-// import translation from '../../../../lang/translations';
-// import { LanguageContext } from '../../../../context/LanguageContext';
 
 
 const TransfertStat = () => {
-    // const {language} = useContext(LanguageContext)
+    
   return (
     <>
         <Row style={{marginTop: "20px", marginBottom: "40px"}}>
