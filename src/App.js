@@ -16,8 +16,6 @@ const { Header, Content, Footer, } = Layout
 
 function App() {
 
-
-
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <SideBar />
@@ -27,16 +25,13 @@ function App() {
           </Header>
           <Content >
               <Routes>
-                  {/* <Route path='/dashboard' element={<Dashboard />} /> */}
-                  {/* <Route path='*' element={<Error />} /> */}
-                  <Route path='*' element={<Error />} />
                   <Route path='/customers' element={<Customers />} />
                   <Route path='/providers' element={<Providers />} />
                   <Route path='/stores' element={<Stores />} />
                   <Route path='/users' element={<Users />} />
                   <Route path='/products' element={<Products />} />
                   <Route path='/variations' element={<Variations />} />
-
+                  <Route path='*' element={<Error />} />
               </Routes>
 
           </Content>
