@@ -9,6 +9,7 @@ import Users from './pages/users/Users';
 import Products from './pages/products/Products';
 import Providers from './pages/providers/Providers';
 import Variations from './pages/variations/Variations';
+import Error from './pages/errors/Error';
 
 const {Title} = Typography
 const { Header, Content, Footer, } = Layout
@@ -28,6 +29,7 @@ function App() {
               <Routes>
                   {/* <Route path='/dashboard' element={<Dashboard />} /> */}
                   {/* <Route path='*' element={<Error />} /> */}
+                  <Route path='*' element={<Error />} />
                   <Route path='/customers' element={<Customers />} />
                   <Route path='/providers' element={<Providers />} />
                   <Route path='/stores' element={<Stores />} />

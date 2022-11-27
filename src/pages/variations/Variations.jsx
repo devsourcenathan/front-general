@@ -6,6 +6,9 @@ import InputStat from './input/InputStat'
 import OutputStat from './output/OutputStat'
 import TransfertStat from './transfert/TransfertStat'
 import All from './all/All.tsx'
+import InputList from './input/InputList.tsx'
+import OutputList from './output/OutputList.tsx'
+import TransfertList from './transfert/TransfertList.tsx'
 // import { useState } from 'react';
   const {Title} = Typography
 
@@ -21,18 +24,18 @@ function Variations() {
         {
           label: `Entrees`,
           key: '2',
-          children: "Entrees",
+          children: <InputList />,
         //   children: <Expenses />,
         },
         {
           label: `Sorties`,
           key: '3',
-          children: "Sorties",
+          children: <OutputList />,
         },
         {
           label: `Transferts`,
           key: '4',
-          children: "Transferts",
+          children: <TransfertList />,
         },
       ]
     
