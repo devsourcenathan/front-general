@@ -39,8 +39,8 @@
       getItem("Repertoire", "/repository", <MdPermContactCalendar />, [
         getItem("Clients", '/customers'),
         getItem("Boutiques", '/stores'),
-        getItem("Fournisseurs", '/providers'),
         getItem("Utilisateurs", '/users'),
+        getItem("Fournisseurs", '/providers'),
       ]),
       getItem("Stock", "/stock",<BsCalendarCheck />, [
         getItem("Produits", "/products"),
