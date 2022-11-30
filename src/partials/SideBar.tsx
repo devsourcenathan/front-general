@@ -48,10 +48,7 @@
         getItem("Entrees", "/input"),
         getItem("Variations", "/variations"),
       ]),
-      getItem("Finances", "/finances", <BsCashCoin />, [
-        getItem("Test", "/treasury"),
-        // getItem(translation[language].menu.taxation, "/taxation"),
-      ]),
+      getItem("Finances", "/finances", <BsCashCoin />),
       // getItem(translation[language].menu.document, "/document", <HiOutlineDocumentDuplicate />),
       getItem("Parametres", "/parameters", <MdSettings />),
     ]
